@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from typing import List
 
+"""Module of a function that sums a list of floats"""
+
 
 def sum_list(input_list: List[float]) -> float:
     """
@@ -12,7 +14,4 @@ def sum_list(input_list: List[float]) -> float:
     Returns:
     float: The sum of the floats in the list.
     """
-    if input_list is None:
-        return 0
-    else:
-        return sum(input_list)
+    return sum(input_list)
