@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+This module contains a function that sums a list of integers and floats.
+"""
+
 from typing import List, Union
 
 
