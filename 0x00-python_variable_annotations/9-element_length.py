@@ -4,7 +4,7 @@ This module contains a function to return a list of tuples
 containing elements and their lengths.
 """
 
-from typing import Iterable, Sequence, Tuple
+from typing import Iterable, Sequence, Tuple, List
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
