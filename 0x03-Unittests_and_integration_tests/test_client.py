@@ -4,7 +4,7 @@ This module contains unit tests for the client module.
 """
 
 import unittest
-from unittest.mock import patch, PropertyMock
+from unittest.mock import patch, PropertyMock, MagicMock
 from parameterized import parameterized
 from client import GithubOrgClient
 
@@ -43,7 +43,7 @@ class TestGithubOrgClient(unittest.TestCase):
         self.assertEqual(client._public_repos_url, test_payload["repos_url"])
 
     @patch('client.get_json')
-    def test_public_repos(self, mock_get_json) -> None:
+    def test_public_repos(self, mock_get_json: MagicMock) -> None:
         """
         Test that GithubOrgClient.public_repos
         returns the correct list of repos.
